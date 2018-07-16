@@ -1,0 +1,37 @@
+@import "variable";
+
+.contacts {
+  margin: 0 auto;  
+  text-align: center; 
+}
+
+.contacts__description {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.contacts__info {
+  text-align: start;
+  padding-left: 10px;
+}
+.info_desc {
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.info__email,
+.info__tel {
+  display: block;
+  margin-top: 10px;
+  color: inherit;
+}
+
+.info-decor {
+  color: $primary-color;
+}
+
+.info__location {
+  margin-top: 10px;
+  padding-right: 10px;
+}

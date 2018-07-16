@@ -1,0 +1,69 @@
+@import "variable";
+
+.testimonials {
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: rgba(0, 155, 222, 0.6); 
+}
+
+.testimonials__link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #323232;
+  border-bottom: 1px solid #323232;
+}
+
+.inner-testimonial {
+  text-align: center;
+  color: #fff;	
+}
+
+.inner-testimonial > img{
+	max-width: 128px;
+	margin:0 auto 15px;
+	opacity: 0;
+	-webkit-transition:all 1.3s linear;
+	transition:all 1.3s linear;
+}
+
+.owl-item.active .inner-testimonial > img{
+	-webkit-transition:all 1.3s linear;
+	transition:all 1.3s linear;
+}
+
+.owl-item.active .inner-testimonial > img.full-opacity {
+	opacity:1;
+	-webkit-transition:all 0.3s linear;
+	transition:all 0.3s linear;
+}
+
+h3.city-name {
+	padding:10px 0;
+	font-size: 20px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 900;
+}
+
+p.text-testimonial {
+	padding:10px 0;
+	font-size: 20px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+  line-height: 25px;
+  color: #fff
+}
+
+.block-items {
+	cursor: default;
+}
+
+/*Изменяем внешний вид элементов управления (точки) */
+.owl-theme .owl-dots .owl-dot span {
+	width: 14px;
+	height: 14px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span{
+	width: 18px;
+	height: 18px;
+}

@@ -1,0 +1,9 @@
+<i class="fa fa-shower" aria-hidden="true"></i>  ванная
+<i class="fa fa-snowflake-o" aria-hidden="true"></i> кондей
+<i class="fa fa-coffe" aria-hidden="true"></i> завтрак
+<i class="fa fa-envelope" aria-hidden="true"></i> конвер
+<i class="fa fa-bed" aria-hidden="true"></i> кровать
+<i class="fa fa-wifi" aria-hidden="true"></i> wifi
+<i class="fa fa-television" aria-hidden="true"></i> телевизор
+<i class="fa fa-phone" aria-hidden="true"></i> телефонная трубка
+<i class="fa fa-rub" aria-hidden="true"></i> рубли

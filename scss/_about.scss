@@ -1,0 +1,25 @@
+@import "variable";
+
+
+.about {  
+  width: 1200px;
+  margin: 0 auto;  
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+
+
+
+
+.about__img-container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+}
+
+.about__img {
+  margin-top: 20px;  
+}

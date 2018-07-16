@@ -1,0 +1,50 @@
+
+@import "variable";
+
+
+figcaption {
+  margin: 10px 0;
+}
+.price {
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: #fafafa;
+  color: #323232; 
+  
+}
+
+.price__catigories {
+  width: 230px;
+  margin: 0 auto;
+  // margin-bottom: 20px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #323232 
+}
+
+.price__text-desc {
+  display: block;
+  margin: 10px 0;
+}
+
+.in__room {
+  display: flex;  
+  flex-wrap: wrap;
+  margin-bottom: 0; 
+}
+
+.far,
+.fas {
+  margin: 0 auto; 
+}
+
+.in__room_item {
+  flex-grow: 0;     /* флекс элемент увеличивается */
+	flex-shrink: 0;   /* флекс элемент сжимается*/
+  flex-basis: 33%;
+  padding: 20px 0;
+  font-size: 1.5rem;
+  border-right: 1px solid #323232;
+  //border-radius: 6px;
+  background-color: white;
+}

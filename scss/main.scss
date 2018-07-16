@@ -1,0 +1,102 @@
+
+
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+html {
+  font: 16px "Roboto", Verdana, Geneva, sans-serif;
+  color: 323232;
+}
+
+a {  
+  text-decoration: none;  
+}
+
+ul {
+  padding-left: 0; 
+  list-style: none; 
+}
+
+
+body {   
+  margin: 0;
+  padding: 0 ;
+}
+
+h1, h2, h3, p {
+ margin: 0;
+ padding: 0;
+ color: #323232;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.container {
+	max-width: 960px;
+  margin:0 auto;  
+}
+
+.section__title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 2.625rem;  
+  text-transform: uppercase;
+}
+
+
+
+//для корректного отображения якоря
+.anchor {
+  margin-top: -100px;
+  padding-top: 100px;  
+  display: inline-block;  
+}
+
+.footer {
+  background-color: #323232;
+  
+  text-align: center;
+}
+
+.footer__copyrighted {
+  color: #fafafa;
+  padding:  30px 0;
+}
+
+.fa-heart {
+  color: #ff0000;
+}
+
+
+
+@import "variable";
+@import "header";
+@import "about";
+@import "testimonials";
+@import "modal";
+@import "price";
+@import "contacts";
+
+
+//  ЦЕНЫ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ //@import "media" ;
