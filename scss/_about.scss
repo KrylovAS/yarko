@@ -1,21 +1,24 @@
 @import "variable";
-
-
-.about {  
-  
-  margin: 0 auto;  
+.about {
+  margin: 0 auto;
   text-align: center;
   padding-bottom: 30px;
 }
 
-.about__img-container {
-  position: relative;
+.about__img_containe {
   display: flex;
-  overflow: hidden;
   flex-wrap: wrap;
-  justify-content: space-between; 
+  align-items: center;
+  justify-content: center;
+}
+
+.about__img-big {
+  width: 47%;
+  height: 300px;
+  margin: 5px;
 }
 
 .about__img {
-  margin-top: 20px;  
+  width: 23%;
+  margin: 5px;
 }

@@ -30,21 +30,29 @@ figcaption {
 .in__room {
   display: flex;  
   flex-wrap: wrap;
-  margin-bottom: 0; 
+  justify-content: center;
+   
 }
 
-.far,
-.fas {
-  margin: 0 auto; 
+.price__room {
+  width: 290px;
+  height: 190px;
 }
 
 .in__room_item {
   flex-grow: 0;     /* флекс элемент увеличивается */
 	flex-shrink: 0;   /* флекс элемент сжимается*/
   flex-basis: 33%;
+  white-space: nowrap;
   padding: 20px 0;
+  margin: 5px;
+  padding: 5px;
   font-size: 1.5rem;
-  border-right: 1px solid #323232;
-  //border-radius: 6px;
-  background-color: white;
+  border: 1px solid #323232;
+  border-radius: 6px;
+  background-color: #fafafa;  
+}
+
+.price__text {
+  padding-top: 15px;
 }

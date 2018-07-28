@@ -1,43 +1,43 @@
 @import "variable";
-
-
-  /*==========  Desktop First  ==========*/
+/*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+
+@media only screen and (max-width: 1200px) {
   .contener-header {
     padding: 0 10px;
   }
-  
-  
+  .header__middle {
+    background: url(../img/headerBG1200.jpg) no-repeat top/cover;
+  }
+  .header__description {
+    margin-top: 90px;
+  }
 }
-	/**/
 
+/**/
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
 
+@media only screen and (max-width: 992px) {
   //фиксированое меню
-  .header__logo img {    
+  .header__logo img {
     width: 95px;
   }
-
-  .menu__icon{
+  .menu__icon {
     display: inline-block;
   }
-  
   .menu__list {
     position: fixed;
     display: none;
     top: 0;
     right: 0;
     left: 0;
-    margin-top: 80px;
+    margin-top: 70px;
     background-color: rgba(250, 250, 250, 0.95);
     z-index: 1000;
     overflow: auto;
   }
-  
   .menu__link {
     display: block;
     padding: 15px 0;
@@ -45,92 +45,186 @@
     color: $primary-color;
     font-size: 2rem;
   }
-
   .menu__item {
     margin: 20px 0;
   }
-  .menu__list, .social  {
-    display: none;    
-  } 
-
+  .menu__list,
+  .hidden {
+    display: none;
+  }
   .contener-header {
     justify-content: space-between;
-    height: 80px;
+    height: 70px;
     padding: 0 20px;
   }
-
   .menu {
     order: 1;
+  } // <-- фиксированое меню
+  .section__title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    ;
   }
- // <-- фиксированое меню
+  .in__room_item {
+    font-size: 1.5rem;
+  }
+  .about__img-big {
+    width: 95%;
+    height: auto;
+    margin: 5px;
+  }
+  .about__img {
+    width: 45%;
+    margin: 5px;
+  }
+  .contacts__description {
+    padding: 0 10px;
+  }
+  .header__description {
+    margin-top: 70px;
+  }
+  .header__info_tel {
+    display: block;
+    color: #323232;
+  }
+  .description__info_tel {
+    display: none;
+    color: inherit;
+  }
 }
-	/**/
 
+/**/
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-  iframe {
+
+@media only screen and (max-width: 768px) {
+  // .contacts__map  {
+  //   display: none;
+  // }
+  .in__room_item {
+    font-size: 1.2rem;
+  }
+  .contacts__description {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contacts__info {
+    text-align: center;
+  }
+  .contacts__map {
+    margin: 15px 55px;
+  }
+}
+
+/**/
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+  .header__logo {
+    display: none
+  }
+  .in__room_item {
+    font-size: 1rem;
+  }
+  .header__middle {
+    height: 270px;
+    background: url(../img/headerBG480.jpg) no-repeat center;
+  }
+  .about__img-big,
+  .about__img {
+    width: 100%;
+  }
+  .headerBooking__btn-hide {
+    display: none;
+  }
+  .header__top_sub {
+    display: block;
+  }
+  .header__top_title {
+    display: inline-block;
+  }
+  .headerBooking__btn-show {
+    display: inline-block;
+    width: 90px;
+    height: 27px;
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+  .social {
+    flex-grow: 0.2;
+  }
+  .header__description {
+    margin-top: 140px;
+  }
+  .header__info_tel {
     display: none;
   }
 }
-	/**/
 
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-  .header__logo {    
-    display: none
+@media only screen and (max-width: 400px) {
+  .social__bub-hide {
+    display: none;
   }
-
-  
 }
-	/**/
 
+/**/
+
+@media only screen and (max-width: 360px) {
+  .price__room {
+    width: 220px;
+    height: 165px;
+  }
+}
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {}
-	/**/
 
+@media only screen and (max-width: 320px) {
+  .testimonials__link {
+    font-size: 1rem;
+  }
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/**/
 
 /*==========  Mobile First  ==========*/
 
 /* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {}
-	/**/
 
+@media only screen and (min-width: 320px) {}
+
+/**/
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
- 
-}
-	/**/
 
+@media only screen and (min-width: 480px) {}
+
+/**/
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {}
-	/**/
 
+@media only screen and (min-width: 768px) {}
+
+/**/
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-  
-}
-	/**/
 
+@media only screen and (min-width: 992px) {}
+
+/**/
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-  
 
-}
-  /**/
-  
+@media only screen and (min-width: 1200px) {}
 
-  @media screen and (max-width: 1041px) and (min-width: 0px) {
+/**/
+
+@media screen and (max-width: 1041px) and (min-width: 0px) {
   .wrap {
     min-width: 100%;
   }
-
-  
-
 }

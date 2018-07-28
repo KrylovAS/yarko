@@ -1,8 +1,7 @@
 @import "variable";
-
 .contacts {
-  margin: 0 auto;  
-  text-align: center; 
+  margin: 0 auto;
+  text-align: center;
 }
 
 .contacts__description {
@@ -12,9 +11,10 @@
 }
 
 .contacts__info {
-  text-align: start;
-  padding-left: 10px;
+  text-align: left;
+  flex: 0 1 50%;
 }
+
 .info_desc {
   margin-bottom: 15px;
   font-size: 0.9rem;
@@ -23,6 +23,9 @@
 .info__email,
 .info__tel {
   display: block;
+}
+
+.info__tel {
   margin-top: 10px;
   color: inherit;
 }
@@ -34,4 +37,14 @@
 .info__location {
   margin-top: 10px;
   padding-right: 10px;
+}
+
+.contacts__map {
+  flex: 0 1 50%;
+  border: 0;
+}
+
+.contacts__info-autor {
+  width: 200px;
+  height: auto;
 }

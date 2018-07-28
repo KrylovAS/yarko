@@ -1,0 +1,20 @@
+@import "variable";
+.service {
+  text-align: center;
+  background-color: #fafafa;
+  overflow: hidden;
+}
+
+.servise__list {
+  text-align: start;
+  padding-left: 60px;
+  padding-right: 10px;
+}
+
+.service__title-list {
+  font-size: 22px;
+}
+
+.servise__list li {
+  color: #323232;
+}

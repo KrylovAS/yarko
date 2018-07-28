@@ -13,6 +13,7 @@ html {
 
 a {  
   text-decoration: none;  
+  color: inherit;
 }
 
 ul {
@@ -92,6 +93,7 @@ h1, h2, h3, p {
 @import "variable";
 @import "header";
 @import "about";
+@import "service";
 @import "testimonials";
 @import "modal";
 @import "price";
