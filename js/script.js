@@ -1,3 +1,20 @@
+
+(function ($) {
+  $(function () {
+    $('.menu__icon').on('click', function () {
+      $(this).closest('.menu')
+        .toggleClass('menu_state_open');
+    });
+
+    $('.menu__link').on('click', function () {
+      // do something
+
+      $(this).closest('.menu')
+        .removeClass('menu_state_open');
+    });
+  });
+})(jQuery);
+
 $(document).ready(function () {
     $("form").submit(function () {
         // Получение ID формы
@@ -20,4 +37,5 @@ $(document).ready(function () {
         return false;
     });
 });
+
 

@@ -4,9 +4,9 @@
 <head>
 
   <meta charset="utf-8">
-  <title>Отдых в Крыму с детьми.Все включено </title>
+  <title>Отдых в Крыму с детьми. Все включено </title>
   <meta name="keywords" content="крым, отдых с ребенком, отдых с детьми, отдых в крыму, отдых на море, отдых в севастополе, учкуевка, цены, пансионаты крыма, йога туры, семейный отдых, лагерь, гостевой дом, все включено, арт лагерь, рисование, актерские курсы">
-  <meta name="description" content="Отдых Крым 2018. Гостевой дом в Крыму, с питанием, анимация, отдых дети, Крым с детьми, Крым с ребенком, Крым с детьми отзывы, Севастополь, Учкуевка гостевые дома, гостевой дом">
+  <meta name="description" content="Лучший отдыз в Крыму с детьми, люкс номера с видом на море. Творчество , йога и активные игры. Песчано-галечный пляж в 150м. Отдых Крым 2018. Гостевой дом в Крыму, с питанием, анимация, отдых дети, Крым с детьми, Крым с ребенком, Крым с детьми отзывы, Севастополь, Учкуевка гостевые дома, гостевой дом">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Chrome, Firefox OS and Opera -->
@@ -160,15 +160,17 @@
 
       <section class="about">
         <div class="container">
+          </a>
           <a class="anchor" id="about__anchor"></a>
+          
           <h2 class="section__title">O лагере</h2>
           <p class="title__description">Семейный Лагерь «Ярко» - лучший отдых в Крыму с детьми. Организованная творческая и развлекательная программа,
             бесконечный песчаный пляж «Учкуевка», комфортный гостевой дом с номерами люкс на берегу моря - 150 метров до
-            линии воды. Популярные исторические и природные достопримечтальности поблизости. </p>
+            линии воды. Популярные исторические и природные достопримечтальности поблизости. </p>          
           <p class="title__description">Уютная атмосфера, домашняя кухня (завтраки включены в стоимость), присмотр за детьми, индивидуальный подход и профессиональный
             организатор путешествий с опытом более 10 лет.
             <br> Формат семейного лагеря подразумевает единую тему отдыха, игры большими компаниями, дружеские посиделки у костра.
-            Наша программа рассчитана на родителей с детьми от 0 до 10 лет.</p>
+            Наша программа рассчитана на родителей с детьми от 0 до 10 лет.</p>          
           <p class="title__description">
             Творческая часть для взрослых включает: мастер-классы по рисованию акварелью профессионального талантливого художника, игровые
             веселые актерские мастерские, утренняя йога на свежем воздухе под шум прибоя. Игровая программа – это познавательные,
@@ -176,10 +178,12 @@
             летние поделки, рисунки, раскрашивание камней, наблюдение за улитками, дискотеки, командные уличные игры, которых
             так не хватает в городе.
           </p>
-
+          <a class="anchor" id="video1" href="#video1"></a>
+          <video  class="about__video" src="../img/video/family-camp.mp4" loop controls></video>
+          
           <div class="about__img_containe">
+            
             <img class="about__img-big" src="../img/lavanda.jpg" alt="lavand">
-
             <img class="about__img-big" src="../img/yoga-sea.jpg" alt="yoga sea">
             <img class="about__img" src="../img/sea-game.jpg" alt="sea game">
             <img class="about__img" src="../img/forest-game.jpg" alt="forest game">
@@ -432,31 +436,38 @@
 
   <!--модалка-->
   <script src="libs/jquery/jquery-2.1.3.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+    $(function() {
+  
+      var $video = $('.about__video');
+      var $window = $(window);
+    
+      $window.scroll(function() {
+    
+        var $topOfVideo = $video.offset().top;
+        var $bottomOfVideo = $video.offset().top + $video.outerHeight();
+    
+        var $topOfScreen = $window.scrollTop();
+        var $bottomOfScreen = $window.scrollTop() + $window.innerHeight();
+        
+        if(($bottomOfScreen > $bottomOfVideo) && ($topOfScreen < $topOfVideo)){
+          $video[0].play();
+        } else {
+          $video[0].pause();
+        }
+    
+      });
+    
+    });
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="js/remodal.min.js"></script>
   <script src="js/script.js"></script>
 
 
   <script src="libs/owl-carousel/owl.carousel.min.js"></script>
-  <script src="js/custom.js"></script>
-  <script>
-    (function ($) {
-      $(function () {
-        $('.menu__icon').on('click', function () {
-          $(this).closest('.menu')
-            .toggleClass('menu_state_open');
-        });
-
-        $('.menu__link').on('click', function () {
-          // do something
-
-          $(this).closest('.menu')
-            .removeClass('menu_state_open');
-        });
-      });
-    })(jQuery);
-  </script>
-
+  <script src="js/custom.js"></script>  
+  
 </body>
 
 </html>

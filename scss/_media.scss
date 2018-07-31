@@ -91,6 +91,14 @@
     display: none;
     color: inherit;
   }
+
+  .about__video {  
+    width: 100vw;
+    height: auto;  
+    
+  }
+
+  
 }
 
 /**/
@@ -160,6 +168,16 @@
   .header__info_tel {
     display: none;
   }
+
+  .about__video {
+    padding: 0;
+  }
+
+  .anchor {
+    position: relative;
+    bottom: 70px;
+  }
+ 
 }
 
 @media only screen and (max-width: 400px) {
