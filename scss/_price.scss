@@ -30,15 +30,15 @@
 }
 
 .price__catigories-4000:after {
-  content: url('../img/sale4000.png');  
+  content: url('../img/sale2500.png');  
 }
 
 .price__catigories-5000:after {
-  content: url('../img/sale5000.png');  
+  content: url('../img/sale4000.png');  
 }
 
 .price__catigories-4100:after {
-  content: url('../img/sale4100.png');  
+  content: url('../img/sale3000.png');  
 }
 
 
@@ -80,6 +80,16 @@
 
 .price__text {
   padding-top: 15px;
+  line-height: 30px;
+}
+
+.price__text--color {
+  color: #D80027;
+  
+}
+
+.price__text--size {
+  font-size: 18px;
 }
 
 
@@ -90,4 +100,9 @@
 
 .price__modal { 
   display: inline-block;
+}
+
+.price__text_link {
+  color: #009BDE;
+  text-decoration: underline;
 }
