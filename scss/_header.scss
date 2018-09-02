@@ -69,15 +69,26 @@
 
 .social {
   flex-grow: 0.1;
+ 
 }
 
 .social__link {
   display: inline-block;
-  margin-top: 5px;
+  margin-top: 5px;   
   fill: $primary-color;
   &:hover {
     fill: #f49a20
   }
+  &:last-child {
+    margin-left: 5px;
+  }  
+}
+
+
+
+.social__icon {
+  width: 42px;
+  height: 42px;
 }
 
 .headerBooking__btn {
@@ -212,4 +223,15 @@
 .title__description {
   //margin-top: 10px;
   padding: 0 25px 15px 25px;
+}
+.menu__sale {
+  position: relative;
+}
+
+.menu__sale:before{
+  content: url(../img/svg/discount-label-for-commerce.svg);
+  position: absolute;  
+  bottom: -13px;
+  right: -30px;
+  
 }

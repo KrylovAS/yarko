@@ -94,8 +94,11 @@
 
   .about__video {  
     width: 100vw;
-    height: auto;  
-    
+    height: auto;    
+  }
+  .menu__sale:before {
+    bottom: -5px;
+    right: -20px;
   }
 
   
@@ -141,7 +144,7 @@
   }
   .about__img-big,
   .about__img {
-    width: 100%;
+    width: 100%;    
   }
   .headerBooking__btn-hide {
     display: none;
@@ -154,10 +157,11 @@
   }
   .headerBooking__btn-show {
     display: inline-block;
-    width: 90px;
-    height: 27px;
-    font-size: 0.8rem;
-    padding: 6px;
+    width: 110px;
+    height: 33px;
+    padding: 9px;
+    font-size: 0.8rem;    
+    text-align: center;
   }
   .social {
     flex-grow: 0.2;
